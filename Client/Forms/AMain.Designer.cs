@@ -57,8 +57,9 @@ namespace Launcher
             this.ProgEnd_pb = new System.Windows.Forms.PictureBox();
             this.ProgressCurrent_pb = new System.Windows.Forms.PictureBox();
             this.TotalProg_pb = new System.Windows.Forms.PictureBox();
-            this.Launch_pb = new System.Windows.Forms.PictureBox();
             this.Main_browser = new Microsoft.Web.WebView2.WinForms.WebView2();
+            this.Launch_pb = new System.Windows.Forms.PictureBox();
+            this.launch_textBox = new System.Windows.Forms.TextBox();
             this.Movement_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Config_pb)).BeginInit();
@@ -67,8 +68,8 @@ namespace Launcher
             ((System.ComponentModel.ISupportInitialize)(this.ProgEnd_pb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProgressCurrent_pb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TotalProg_pb)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Launch_pb)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Main_browser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Launch_pb)).BeginInit();
             this.SuspendLayout();
             // 
             // ActionLabel
@@ -134,7 +135,7 @@ namespace Launcher
             this.Name_label.Name = "Name_label";
             this.Name_label.Size = new System.Drawing.Size(186, 22);
             this.Name_label.TabIndex = 0;
-            this.Name_label.Text = "Crystal Mir 2";
+            this.Name_label.Text = "传奇2 Crystal Mir 2";
             this.Name_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Name_label.Visible = false;
             // 
@@ -202,7 +203,7 @@ namespace Launcher
             this.CurrentFile_label.Name = "CurrentFile_label";
             this.CurrentFile_label.Size = new System.Drawing.Size(362, 17);
             this.CurrentFile_label.TabIndex = 27;
-            this.CurrentFile_label.Text = "Checking Files.";
+            this.CurrentFile_label.Text = "检查文件";
             this.CurrentFile_label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CurrentFile_label.Visible = false;
             // 
@@ -298,24 +299,6 @@ namespace Launcher
             this.TotalProg_pb.TabStop = false;
             this.TotalProg_pb.SizeChanged += new System.EventHandler(this.TotalProg_pb_SizeChanged);
             // 
-            // Launch_pb
-            // 
-            this.Launch_pb.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Launch_pb.BackColor = System.Drawing.Color.Transparent;
-            this.Launch_pb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Launch_pb.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Launch_pb.Image = global::Client.Properties.Resources.Launch_Base1;
-            this.Launch_pb.Location = new System.Drawing.Point(658, 472);
-            this.Launch_pb.Name = "Launch_pb";
-            this.Launch_pb.Size = new System.Drawing.Size(116, 54);
-            this.Launch_pb.TabIndex = 19;
-            this.Launch_pb.TabStop = false;
-            this.Launch_pb.Click += new System.EventHandler(this.Launch_pb_Click);
-            this.Launch_pb.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Launch_pb_MouseDown);
-            this.Launch_pb.MouseEnter += new System.EventHandler(this.Launch_pb_MouseEnter);
-            this.Launch_pb.MouseLeave += new System.EventHandler(this.Launch_pb_MouseLeave);
-            this.Launch_pb.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Launch_pb_MouseUp);
-            // 
             // Main_browser
             // 
             this.Main_browser.CausesValidation = false;
@@ -328,6 +311,42 @@ namespace Launcher
             this.Main_browser.Visible = false;
             this.Main_browser.ZoomFactor = 1D;
             // 
+            // Launch_pb
+            // 
+            this.Launch_pb.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Launch_pb.BackColor = System.Drawing.Color.Transparent;
+            this.Launch_pb.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Launch_pb.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Launch_pb.Image = global::Client.Properties.Resources.Launch_Base1;
+            this.Launch_pb.Location = new System.Drawing.Point(657, 473);
+            this.Launch_pb.Name = "Launch_pb";
+            this.Launch_pb.Size = new System.Drawing.Size(116, 54);
+            this.Launch_pb.TabIndex = 19;
+            this.Launch_pb.TabStop = false;
+            this.Launch_pb.Click += new System.EventHandler(this.Launch_pb_Click);
+            this.Launch_pb.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Launch_pb_MouseDown);
+            this.Launch_pb.MouseEnter += new System.EventHandler(this.Launch_pb_MouseEnter);
+            this.Launch_pb.MouseLeave += new System.EventHandler(this.Launch_pb_MouseLeave);
+            this.Launch_pb.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Launch_pb_MouseUp);
+            // 
+            // launch_textBox
+            // 
+            this.launch_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.launch_textBox.BackColor = System.Drawing.SystemColors.WindowText;
+            this.launch_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.launch_textBox.Enabled = false;
+            this.launch_textBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.launch_textBox.ForeColor = System.Drawing.SystemColors.Window;
+            this.launch_textBox.Location = new System.Drawing.Point(657, 482);
+            this.launch_textBox.Name = "launch_textBox";
+            this.launch_textBox.Size = new System.Drawing.Size(116, 28);
+            this.launch_textBox.TabIndex = 33;
+            this.launch_textBox.Text = "启动游戏";
+            this.launch_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.launch_textBox.Click += new System.EventHandler(this.Launch_pb_Click);
+            // 
             // AMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -336,6 +355,7 @@ namespace Launcher
             this.BackgroundImage = global::Client.Properties.Resources.pfffft;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(800, 548);
+            this.Controls.Add(this.launch_textBox);
             this.Controls.Add(this.Main_browser);
             this.Controls.Add(this.SpeedLabel);
             this.Controls.Add(this.Credit_label);
@@ -371,8 +391,8 @@ namespace Launcher
             ((System.ComponentModel.ISupportInitialize)(this.ProgEnd_pb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProgressCurrent_pb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TotalProg_pb)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Launch_pb)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Main_browser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Launch_pb)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -382,7 +402,6 @@ namespace Launcher
         private System.Windows.Forms.Label ActionLabel;
         private System.Windows.Forms.Label SpeedLabel;
         public System.Windows.Forms.Timer InterfaceTimer;
-        public System.Windows.Forms.PictureBox Launch_pb;
         private System.Windows.Forms.PictureBox Close_pb;
         private System.Windows.Forms.Panel Movement_panel;
         private System.Windows.Forms.PictureBox TotalProg_pb;
@@ -398,6 +417,8 @@ namespace Launcher
         private System.Windows.Forms.PictureBox Config_pb;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Microsoft.Web.WebView2.WinForms.WebView2 Main_browser;
+        public PictureBox Launch_pb;
+        private TextBox launch_textBox;
     }
 }
 

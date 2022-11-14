@@ -155,7 +155,7 @@
             this.ID_l.Name = "ID_l";
             this.ID_l.Size = new System.Drawing.Size(123, 15);
             this.ID_l.TabIndex = 8;
-            this.ID_l.Text = "Username";
+            this.ID_l.Text = "用户名 Username";
             this.ID_l.Click += new System.EventHandler(this.AccountLogin_txt_Click);
             // 
             // Password_l
@@ -169,7 +169,7 @@
             this.Password_l.Name = "Password_l";
             this.Password_l.Size = new System.Drawing.Size(123, 15);
             this.Password_l.TabIndex = 9;
-            this.Password_l.Text = "Password";
+            this.Password_l.Text = "密码 Password";
             this.Password_l.Click += new System.EventHandler(this.AccountPass_txt_Click);
             // 
             // label4
@@ -200,9 +200,9 @@
             this.AutoStart_label.ForeColor = System.Drawing.Color.Gray;
             this.AutoStart_label.Location = new System.Drawing.Point(30, 147);
             this.AutoStart_label.Name = "AutoStart_label";
-            this.AutoStart_label.Size = new System.Drawing.Size(54, 13);
+            this.AutoStart_label.Size = new System.Drawing.Size(55, 13);
             this.AutoStart_label.TabIndex = 12;
-            this.AutoStart_label.Text = "Auto start";
+            this.AutoStart_label.Text = "自动开始";
             this.AutoStart_label.Click += new System.EventHandler(this.AutoStart_pb_Click);
             // 
             // Fullscreen_label
@@ -213,9 +213,9 @@
             this.Fullscreen_label.ForeColor = System.Drawing.Color.Gray;
             this.Fullscreen_label.Location = new System.Drawing.Point(30, 51);
             this.Fullscreen_label.Name = "Fullscreen_label";
-            this.Fullscreen_label.Size = new System.Drawing.Size(56, 13);
+            this.Fullscreen_label.Size = new System.Drawing.Size(82, 13);
             this.Fullscreen_label.TabIndex = 14;
-            this.Fullscreen_label.Text = "Fullscreen";
+            this.Fullscreen_label.Text = "全屏 Fullscreen";
             this.Fullscreen_label.Click += new System.EventHandler(this.Fullscreen_pb_Click);
             // 
             // Fullscreen_pb
@@ -237,9 +237,9 @@
             this.OnTop_label.ForeColor = System.Drawing.Color.Gray;
             this.OnTop_label.Location = new System.Drawing.Point(30, 98);
             this.OnTop_label.Name = "OnTop_label";
-            this.OnTop_label.Size = new System.Drawing.Size(72, 13);
+            this.OnTop_label.Size = new System.Drawing.Size(67, 13);
             this.OnTop_label.TabIndex = 16;
-            this.OnTop_label.Text = "Always on top";
+            this.OnTop_label.Text = "最上层显示";
             this.OnTop_label.Click += new System.EventHandler(this.OnTop_pb_Click);
             // 
             // OnTop_pb
@@ -261,9 +261,9 @@
             this.FPScap_label.ForeColor = System.Drawing.Color.Gray;
             this.FPScap_label.Location = new System.Drawing.Point(30, 73);
             this.FPScap_label.Name = "FPScap_label";
-            this.FPScap_label.Size = new System.Drawing.Size(42, 13);
+            this.FPScap_label.Size = new System.Drawing.Size(92, 13);
             this.FPScap_label.TabIndex = 18;
-            this.FPScap_label.Text = "FPS cap";
+            this.FPScap_label.Text = "帧数限制 FPS cap";
             this.FPScap_label.Click += new System.EventHandler(this.FPScap_pb_Click);
             // 
             // FPScap_pb
@@ -310,9 +310,9 @@
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(6, 28);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(55, 14);
+            this.label9.Size = new System.Drawing.Size(82, 14);
             this.label9.TabIndex = 21;
-            this.label9.Text = "Graphics";
+            this.label9.Text = "图形 Graphics";
             // 
             // label10
             // 
@@ -322,9 +322,9 @@
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(133, 28);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(66, 14);
+            this.label10.Size = new System.Drawing.Size(105, 14);
             this.label10.TabIndex = 22;
-            this.label10.Text = "Resolution";
+            this.label10.Text = "分辨率 Resolution";
             // 
             // label11
             // 
@@ -334,9 +334,9 @@
             this.label11.ForeColor = System.Drawing.Color.White;
             this.label11.Location = new System.Drawing.Point(6, 126);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(39, 14);
+            this.label11.Size = new System.Drawing.Size(66, 14);
             this.label11.TabIndex = 23;
-            this.label11.Text = "Game";
+            this.label11.Text = "游戏 Game";
             // 
             // label12
             // 
@@ -401,7 +401,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = global::Client.Properties.Resources.Config_Base1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(230, 311);
+            this.ClientSize = new System.Drawing.Size(252, 333);
             this.Controls.Add(this.Res5_pb);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label5);
